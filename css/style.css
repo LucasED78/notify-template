@@ -50,13 +50,20 @@ section { padding: 60px 0; }
   justify-content: center;
 }
 
+.circle.very-small {
+  width: 32px;
+  height: 32px;
+  background-color: #D5D5D5;
+}
+
 .circle.small {
   height: 48px;
   width: 48px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.circle.small:hover {
+.circle.small:hover,
+.circle.very-small:hover {
   background-color: #5ECD74;
   color: white;
 }
@@ -75,6 +82,12 @@ section { padding: 60px 0; }
 
 .flex-container {
   display: flex;
+}
+
+p {
+  margin: 0;
+  margin: 10px 0;
+  color: gray;
 }
 
 /* HEADER SECTION */
@@ -190,4 +203,41 @@ button {
   margin: 30px 0;
   color: gray;
   line-height: 25px;
+}
+
+/* FIND US SECTION */
+
+.find-us {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.find-us p:first-of-type {
+  width: 85%;
+  line-height: 25px;
+  margin: auto;
+  text-align: center;
+  font-style: italic;
+}
+
+.find-us small {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.people-list{
+  margin: 20px 0;
+}
+
+.social-media {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.social-media .circle:not(:last-of-type) {
+  margin: 0 5px;
 }
