@@ -17,7 +17,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h5 {
   margin: 0;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 h1 {
@@ -64,6 +64,17 @@ section { padding: 60px 0; }
 .circle.medium {
   height: 100px;
   width: 100px;
+}
+
+.w50 { width: 50%; }
+
+.w70 {
+  width: 70%;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
 }
 
 /* HEADER SECTION */
@@ -117,7 +128,7 @@ header h1 span { color: #5ECD74; }
 section.lighter { background-color: #fff; }
 
 .features {
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -140,3 +151,43 @@ section.lighter { background-color: #fff; }
   color: gainsboro;
 }
 
+/* UPDATES SECTION */
+
+section.greyish { background-color: #E3E3E3; }
+
+.get-notified {
+  width: 60%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
+  color: gray;
+  font-size: 20px;
+}
+
+button {
+  background-color: #5ECD74;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 0 10px 10px 0;
+  font-size: 20px;
+}
+
+.input-row {
+  display: flex;
+}
+
+.get-notified .input-row {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.get-notified div:first-of-type {
+  margin: 30px 0;
+  color: gray;
+  line-height: 25px;
+}
