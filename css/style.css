@@ -35,7 +35,7 @@ h5 { font-size: 20px; }
 
 h6 { font-size: 10px; }
 
-section { padding: 60px 0; }
+section, footer { padding: 60px 0; }
 
 
 /* REUSABLE STYLES */
@@ -73,7 +73,9 @@ section { padding: 60px 0; }
   width: 100px;
 }
 
-.w50 { width: 50%; }
+.w50 { 
+  width: 50%;
+}
 
 .w70 {
   width: 70%;
@@ -105,6 +107,8 @@ header {
   display: flex;
   flex-flow: column wrap;
 }
+
+header h1 { color: white; }
 
 header h1 span { color: #5ECD74; }
 
@@ -166,7 +170,7 @@ section.lighter { background-color: #fff; }
 
 /* UPDATES SECTION */
 
-section.greyish { background-color: #E3E3E3; }
+.greyish { background-color: #E3E3E3; }
 
 .get-notified {
   width: 60%;
@@ -240,4 +244,27 @@ button {
 
 .social-media .circle:not(:last-of-type) {
   margin: 0 5px;
+}
+
+/* FOOTER SECTION */
+
+footer .w50 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+footer a,
+footer a:visited {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.5s;
+}
+
+footer a:not(:last-of-type) {
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: black;
 }
